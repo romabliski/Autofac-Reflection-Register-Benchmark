@@ -1,0 +1,7 @@
+**/obj
+**/bin
+.vs/IoC_Benchmark/v15/.suo
+.vs/IoC_Benchmark/v15/Server/sqlite3/db.lock
+.vs/IoC_Benchmark/v15/Server/sqlite3/storage.ide
+.vs/IoC_Benchmark/v15/Server/sqlite3/storage.ide-shm
+.vs/IoC_Benchmark/v15/Server/sqlite3/storage.ide-wal
