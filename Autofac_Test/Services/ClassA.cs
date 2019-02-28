@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace Autofac_Test.Services
 {
-    public class ClassA : IClassA
+    public class ClassA : IClassA, IClassB
     {
         public string Test()
         {

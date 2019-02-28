@@ -36,6 +36,32 @@ namespace IoC_Benchmark
 
         [Benchmark]
 
+        public async Task Autofac_AppUp100times_WithoutReflection()
+        {
+            for (int i = 0; i < 100; i++)
+            {
+                var builder = new WebHostBuilder();
+                builder.UseEnvironment("Development");
+                builder.UseStartup<Startup>();
+                server = new TestServer(builder);
+            }
+        }
+
+        [Benchmark]
+
+        public async Task Autofac_AppUp100times_Reflection()
+        {
+            for (int i = 0; i < 100; i++)
+            {
+                var builder = new WebHostBuilder();
+                builder.UseEnvironment("Development");
+                builder.UseStartup<StartupReflection>();
+                server = new TestServer(builder);
+            }
+        }
+
+        [Benchmark]
+
         public async Task Autofac_TestRequest1Request_WithoutReflection()
         {
             var builder = new WebHostBuilder();
