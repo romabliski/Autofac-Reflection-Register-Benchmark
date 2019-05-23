@@ -5,3 +5,4 @@
 .vs/IoC_Benchmark/v15/Server/sqlite3/storage.ide
 .vs/IoC_Benchmark/v15/Server/sqlite3/storage.ide-shm
 .vs/IoC_Benchmark/v15/Server/sqlite3/storage.ide-wal
+**/BenchmarkDotNet.Artifacts
